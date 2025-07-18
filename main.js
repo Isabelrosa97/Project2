@@ -26,4 +26,13 @@ async function handleSearch(event){
     
 }
 
+async function fetchGifs(query){
+    const encodedQuery = encodeURIComponent(query)
+    const url = `https://api.giphy.com/v1/gifs/search?api_key=${APIkey}&q=${encodedQuery}&limit=20&rating=g&lang=en`;
+
+    const response = await fetch(url);
+    const json = await response.json();
+    return json.data;
+}
+
 
