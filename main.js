@@ -35,4 +35,18 @@ async function fetchGifs(query){
     return json.data;
 }
 
+function displayResults(gifData) {
+    results.innerHTML = "";
 
+    if (gifData.length === 0) {
+        results.innerHTML = "<p>Unable to find GIF</p>"
+        return;
+    }
+    gifData.forEach(gif => {
+        const img = document.createElement("img");
+        img.src = gif.images.fixed_height.url;
+        img.alt = gif.title;
+        img.style.margin = "10px";
+        results.appendChild(img); 
+    });
+}
