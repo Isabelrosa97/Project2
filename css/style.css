@@ -4,9 +4,17 @@
 .search-container{
     text-align: center;
     padding: 30px;
-}
-input[type="text"], button[id="searchButton"] {
-    border:  3px, solid;
-    border-radius: 10px;
-}
 
+}
+#gifResults {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+
+}
+#gifResults img{
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
