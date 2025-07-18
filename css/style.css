@@ -1,11 +1,11 @@
 .navbar-nav{
     margin-left: auto;
 }
-.form-row{
+.search-container{
     text-align: center;
     padding: 30px;
 }
-input[type="text"], button[type="submit"] {
+input[type="text"], button[id="searchButton"] {
     border:  3px, solid;
     border-radius: 10px;
 }

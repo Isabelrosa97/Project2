@@ -31,15 +31,15 @@
     </div>
   </div>
 </nav>
-<form action="#" method="GET">
-    <div class="form-row">
-        <label>
-            <input type="text" name="search-bar" required />
-        </label>
-        <button type="submit">Search</button>
+<form id="searchBar">
+    <div class="search-container">
+        <input type="text" id="searchInput" />  <!--maybe placeholder-->
+        <button id="searchButton">Search</button>
     </div>
 </form>
-
+<div class="results">
+<div id="gifResults"></div>
+</div>
 <script src="./main.js"></script>
 </body>
 </html>
