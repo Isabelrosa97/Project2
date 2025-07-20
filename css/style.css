@@ -1,11 +1,27 @@
-.navbar-nav{
+.navbar-nav, .nav-link {
     margin-left: auto;
+    color: blueviolet;
+}
+.navbar-brand{
+    color: blueviolet;
 }
 .search-container{
     text-align: center;
     padding: 30px;
 
 }
+#searchInput {
+    padding: 10px;
+    border-radius: 20px;
+    font-size: medium;
+    border-color: blueviolet;
+}
+#searchButton {
+    padding: 10px;
+    border-radius: 20px;
+    border-color: blueviolet;
+}
+
 #gifResults {
     display: flex;
     flex-wrap: wrap;

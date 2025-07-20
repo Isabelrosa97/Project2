@@ -19,6 +19,7 @@ async function handleSearch(event){
     const query = input.value.trim();
 
     if (!query) {
+        results.innerHTML = "<p>Error. Try again</p>"
         return;
     } 
     const gifs = await fetchGifs(query);
@@ -39,7 +40,7 @@ function displayResults(gifData) {
     results.innerHTML = "";
 
     if (gifData.length === 0) {
-        results.innerHTML = "<p>Unable to find GIF</p>"
+        results.innerHTML = "<p>Unable to display GIF</p>"
         return;
     }
     gifData.forEach(gif => {
