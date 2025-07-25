@@ -1,45 +1,34 @@
-/*
-changing from webview to mobile ?
-@media (max-width: 480px) {
-    body {
-        font-size: 12px;
-    }
-}
-*/
-
 .navbar-nav, .nav-link {
     margin-left: auto;
     color: blueviolet;
+    font-family: "Bitcount Prop Single";
 }
 .navbar-brand{
     color: blueviolet;
+    font-family: "Bitcount Prop Single";
 }
 .search-container{
     text-align: center;
     padding: 30px;
-
+    font-family: "Bitcount Prop Single";
 }
-#searchInput {
+#searchInput, #searchButton {
     padding: 10px;
     border-radius: 20px;
     font-size: medium;
     border-color: blueviolet;
+    box-shadow: 0 2px 5px 0;
 }
-#searchButton {
-    padding: 10px;
-    border-radius: 20px;
-    border-color: blueviolet;
-}
-
 #gifResults {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 10px;
-
 }
 #gifResults img{
     width: 200px;
-    height: auto;
-    border-radius: 5px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 2px;
 }
+
