@@ -1,22 +1,39 @@
 body{
     font-family: "Bitcount Prop Single";
+    margin: 20px;
+    background-image: url(../Images/5661037d-0a5d-4f2e-837e-e4259c6249ce.jpg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 100vh;
+}
+.navbar{
+    padding: 0;
 }
 .navbar-nav, .nav-link {
     margin-left: auto;
-    color: blueviolet;
+    color: violet;
 }
 .navbar-brand{
-    color: blueviolet;
+    color: violet;
+}
+.container-fluid{
+    background-color: black;
 }
 .search-container{
     text-align: center;
     padding: 20px;
 }
-h1{
+h1 {
    text-align: center;
    padding: 20px;
-   color: blueviolet;
+   color: violet;
 }
+h2{
+    text-align: center;
+    font-size: medium;
+}
+
 #searchInput, #searchButton {
     padding: 10px;
     border-radius: 20px;
