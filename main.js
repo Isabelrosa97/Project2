@@ -2,11 +2,11 @@
 const input = document.getElementById("searchInput");
 const button = document.getElementById("searchButton");
 const results= document.getElementById("gifResults");
-    
+
 const APIkey = 'VpBvHIoCfYtKnr2JvLPKPV8GnrkUfvIQ';
-
+    
+// Activate search when search button is clicked or Enter is pressed 
 button.addEventListener("click", handleSearch);
-
 input.addEventListener("keypress", (event) => {
     if(event.key === "Enter"){
         event.preventDefault();
@@ -14,9 +14,10 @@ input.addEventListener("keypress", (event) => {
     }
 });
 
+// Main async function 
 async function handleSearch(event){
     event.preventDefault();
-    const query = input.value.trim();
+    const query = input.value.trim(); 
 
     if (!query) {
         results.innerHTML = "<p>Error. Try again</p>"
@@ -27,6 +28,7 @@ async function handleSearch(event){
     
 }
 
+// Fetch data from API
 async function fetchGifs(query){
     const encodedQuery = encodeURIComponent(query)
     const url = `https://api.giphy.com/v1/gifs/search?api_key=${APIkey}&q=${encodedQuery}&limit=25&rating=g&lang=en`;
@@ -36,6 +38,7 @@ async function fetchGifs(query){
     return json.data;
 }
 
+// Display gifs on webpage 
 function displayResults(gifData) {
     results.innerHTML = "";
 
