@@ -1,16 +1,21 @@
+body{
+    font-family: "Bitcount Prop Single";
+}
 .navbar-nav, .nav-link {
     margin-left: auto;
     color: blueviolet;
-    font-family: "Bitcount Prop Single";
 }
 .navbar-brand{
     color: blueviolet;
-    font-family: "Bitcount Prop Single";
 }
 .search-container{
     text-align: center;
-    padding: 30px;
-    font-family: "Bitcount Prop Single";
+    padding: 20px;
+}
+h1{
+   text-align: center;
+   padding: 20px;
+   color: blueviolet;
 }
 #searchInput, #searchButton {
     padding: 10px;
