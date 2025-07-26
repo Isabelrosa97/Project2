@@ -1,4 +1,3 @@
-
 const input = document.getElementById("searchInput");
 const button = document.getElementById("searchButton");
 const results= document.getElementById("gifResults");
@@ -14,7 +13,7 @@ input.addEventListener("keypress", (event) => {
     }
 });
 
-// Main async function 
+// Main search handler 
 async function handleSearch(event){
     event.preventDefault();
     const query = input.value.trim(); 
