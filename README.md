@@ -19,5 +19,5 @@ to find the GIFS they are looking for
 
 ## User Story
 1. As a user, I want to search for GIFs by keyword so I can find items that match my interests
-2. As a user, I want the results to load in a clean and organized grid so I can browse through them quickly and easily
+2. As a user, I want the results to load in an organized grid so I can browse through them quickly and easily
 3. As a user, I want to be able to press the Enter button to search instead of clicking the search button for a quicker search 
